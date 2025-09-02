@@ -15,8 +15,7 @@ public static partial class TypeNameConverter
         redirects[from] = convert;
 
     static ConcurrentDictionary<Type, string> cacheDictionary = new(
-        new List<KeyValuePair<Type, string>>
-        {
+        [
             new(typeof(object), "object"),
             new(typeof(Type), "Type"),
             new(typeof(char), "char"),
@@ -78,7 +77,7 @@ public static partial class TypeNameConverter
             new(typeof(Time), "TimeOnly"),
             new(typeof(Time?), "TimeOnly?"),
 #endif
-        });
+        ]);
 
     public static string SimpleName(this Type type) =>
         cacheDictionary.GetOrAdd(type, Inner);
