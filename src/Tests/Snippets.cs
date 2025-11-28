@@ -31,7 +31,7 @@ public class Snippets
     [Fact]
     public void WriteMarkdown()
     {
-        var md = Path.Combine(AttributeReader.GetSolutionDirectory(), "sample.include.md");
+        var md = Path.Combine(ProjectFiles.SolutionDirectory, "sample.include.md");
         File.Delete(md);
         using var writer = File.CreateText(md);
         var type = typeof(Target<int>);
