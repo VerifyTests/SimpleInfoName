@@ -1,4 +1,7 @@
-﻿namespace SimpleInfoName;
+﻿// Suppress AOT warnings - this library requires type metadata to be preserved
+#pragma warning disable IL2072 // Target parameter doesn't have matching annotations
+
+namespace SimpleInfoName;
 
 public static partial class TypeNameConverter
 {

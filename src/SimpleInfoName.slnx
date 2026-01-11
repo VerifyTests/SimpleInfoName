@@ -12,4 +12,5 @@
   </Folder>
   <Project Path="SimpleInfoName/SimpleInfoName.csproj" />
   <Project Path="Tests/Tests.csproj" />
+  <Project Path="SimpleInfoName.AotTests/SimpleInfoName.AotTests.csproj" />
 </Solution>

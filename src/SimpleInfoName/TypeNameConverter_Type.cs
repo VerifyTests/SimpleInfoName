@@ -1,4 +1,14 @@
 ﻿// ReSharper disable MemberCanBePrivate.Global
+using System.Diagnostics.CodeAnalysis;
+
+// SimpleInfoName is fundamentally a reflection-based library for generating type names.
+// Suppress AOT warnings as the library requires type metadata to be preserved by the caller.
+#pragma warning disable IL2070 // 'this' argument does not satisfy 'DynamicallyAccessedMemberTypes'
+#pragma warning disable IL2055 // Call to 'Type.MakeGenericType' can not be statically analyzed
+#pragma warning disable IL3050 // Using member which has 'RequiresDynamicCodeAttribute'
+#pragma warning disable IL2072 // Target parameter doesn't have matching annotations
+#pragma warning disable IL2111 // Method with DynamicallyAccessedMembers is accessed via reflection
+
 namespace SimpleInfoName;
 
 public static partial class TypeNameConverter
