@@ -9,7 +9,7 @@
   <ItemGroup>
     <Using Include="System.Diagnostics.CodeAnalysis" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" Condition="$(Configuration)=='Release'" />
     <None Include="$(SolutionDir)..\docs\zzz.png" Pack="true" PackagePath="\docs\"/>
   </ItemGroup>
 </Project>
