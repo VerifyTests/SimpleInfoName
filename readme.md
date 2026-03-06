@@ -22,7 +22,11 @@ Generates names for reflection infos. Adds a `SimpleName()` extension method to 
 
 [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=SimpleInfoName) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/SimpleInfoName/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=SimpleInfoName)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/SimpleInfoName/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=SimpleInfoName)
+
+### Developed using JetBrains IDEs
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)<!-- endInclude -->
 
 
 ## NuGet
