@@ -21,7 +21,6 @@
     <PackageReference Include="Verify" />
     <PackageReference Include="xunit.v3" />
     <PackageReference Include="Microsoft.CSharp" />
-    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
     <ProjectReference Include="..\SimpleInfoName\SimpleInfoName.csproj" />
   </ItemGroup>
