@@ -1,6 +1,6 @@
 # <img src='/src/icon.png' height='30px'> SimpleInfoName
 
-[![Build status](https://img.shields.io/appveyor/build/SimonCropp/SimpleInfoName)](https://ci.appveyor.com/project/SimonCropp/SimpleInfoName)
+[![Build status](https://github.com/VerifyTests/SimpleInfoName/actions/workflows/build.yml/badge.svg)](https://github.com/VerifyTests/SimpleInfoName/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/SimpleInfoName.svg)](https://www.nuget.org/packages/SimpleInfoName/)
 
 Generates names for reflection infos. Adds a `SimpleName()` extension method to the following types.<!-- include: intro. path: /docs/intro.include.md -->
