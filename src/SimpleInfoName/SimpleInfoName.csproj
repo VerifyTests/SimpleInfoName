@@ -9,6 +9,7 @@
   <ItemGroup>
     <Using Include="System.Diagnostics.CodeAnalysis" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
+    <PackageReference Include="Squash" PrivateAssets="all" />
     <PackageReference Include="Sbom" PrivateAssets="all" />
     <None Include="$(SolutionDir)..\docs\zzz.png" Pack="true" PackagePath="\docs\"/>
   </ItemGroup>
