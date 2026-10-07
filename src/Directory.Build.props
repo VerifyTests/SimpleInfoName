@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <NoWarn>CS1591;CS0649;xUnit1026;xUnit1013;NU1608;NU1109</NoWarn>
-    <Version>3.2.0</Version>
+    <!-- IL2055 and IL2070 are linker warnings from Squash, for reflection the source already
+         suppresses with pragmas the linker cannot see. -->
+    <NoWarn>CS1591;CS0649;xUnit1026;xUnit1013;NU1608;NU1109;IL2055;IL2070</NoWarn>
+    <Version>3.2.1</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <PackageTags>Type, Naming</PackageTags>
     <Description>Generates simple names info (types, parameters, properties, fields, and methods).</Description>
