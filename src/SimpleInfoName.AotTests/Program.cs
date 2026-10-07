@@ -1,6 +1,3 @@
-using System.Reflection;
-using SimpleInfoName;
-
 public static class Program
 {
     public static int Main()
@@ -30,12 +27,18 @@ public static class Program
         // Test simple type name (library uses lowercase C# aliases for built-in types)
         var name = typeof(string).SimpleName();
         Console.WriteLine($"string SimpleName: {name}");
-        if (name != "string") throw new Exception($"Expected 'string', got '{name}'");
+        if (name != "string")
+        {
+            throw new($"Expected 'string', got '{name}'");
+        }
 
         // Test generic type name
         var listName = typeof(List<string>).SimpleName();
         Console.WriteLine($"List<string> SimpleName: {listName}");
-        if (!listName.Contains("List")) throw new Exception($"Expected name containing 'List', got '{listName}'");
+        if (!listName.Contains("List"))
+        {
+            throw new($"Expected name containing 'List', got '{listName}'");
+        }
 
         // Test nested type
         var dictName = typeof(Dictionary<string, int>).SimpleName();
@@ -45,37 +48,58 @@ public static class Program
     static void TestMethodNames()
     {
         var method = typeof(TestClass).GetMethod(nameof(TestClass.TestMethod));
-        if (method == null) throw new Exception("Could not find TestMethod");
+        if (method == null)
+        {
+            throw new("Could not find TestMethod");
+        }
 
         var name = method.SimpleName();
         Console.WriteLine($"TestMethod SimpleName: {name}");
-        if (!name.Contains("TestMethod")) throw new Exception($"Expected name containing 'TestMethod', got '{name}'");
+        if (!name.Contains("TestMethod"))
+        {
+            throw new($"Expected name containing 'TestMethod', got '{name}'");
+        }
     }
 
     static void TestPropertyNames()
     {
         var prop = typeof(TestClass).GetProperty(nameof(TestClass.TestProperty));
-        if (prop == null) throw new Exception("Could not find TestProperty");
+        if (prop == null)
+        {
+            throw new("Could not find TestProperty");
+        }
 
         var name = prop.SimpleName();
         Console.WriteLine($"TestProperty SimpleName: {name}");
-        if (!name.Contains("TestProperty")) throw new Exception($"Expected name containing 'TestProperty', got '{name}'");
+        if (!name.Contains("TestProperty"))
+        {
+            throw new($"Expected name containing 'TestProperty', got '{name}'");
+        }
     }
 
     static void TestFieldNames()
     {
         var field = typeof(TestClass).GetField(nameof(TestClass.TestField));
-        if (field == null) throw new Exception("Could not find TestField");
+        if (field == null)
+        {
+            throw new("Could not find TestField");
+        }
 
         var name = field.SimpleName();
         Console.WriteLine($"TestField SimpleName: {name}");
-        if (!name.Contains("TestField")) throw new Exception($"Expected name containing 'TestField', got '{name}'");
+        if (!name.Contains("TestField"))
+        {
+            throw new($"Expected name containing 'TestField', got '{name}'");
+        }
     }
 
     static void TestConstructorNames()
     {
         var ctor = typeof(TestClass).GetConstructor(Type.EmptyTypes);
-        if (ctor == null) throw new Exception("Could not find constructor");
+        if (ctor == null)
+        {
+            throw new("Could not find constructor");
+        }
 
         var name = ctor.SimpleName();
         Console.WriteLine($"TestClass constructor SimpleName: {name}");
@@ -84,7 +108,10 @@ public static class Program
     static void TestParameterNames()
     {
         var method = typeof(TestClass).GetMethod(nameof(TestClass.MethodWithParams));
-        if (method == null) throw new Exception("Could not find MethodWithParams");
+        if (method == null)
+        {
+            throw new("Could not find MethodWithParams");
+        }
 
         var parameters = method.GetParameters();
         foreach (var param in parameters)
@@ -113,8 +140,6 @@ public static class Program
 public class TestClass
 {
     public string? TestField;
-
-    public TestClass() { }
 
     public string TestProperty { get; set; } = "";
 

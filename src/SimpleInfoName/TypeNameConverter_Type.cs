@@ -1,5 +1,4 @@
 ﻿// ReSharper disable MemberCanBePrivate.Global
-using System.Diagnostics.CodeAnalysis;
 
 // SimpleInfoName is fundamentally a reflection-based library for generating type names.
 // Suppress AOT warnings as the library requires type metadata to be preserved by the caller.
