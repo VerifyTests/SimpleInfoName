@@ -1,3 +1,1 @@
-﻿// Global using directives
-
-global using SimpleInfoName;
+﻿global using SimpleInfoName;
